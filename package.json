@@ -1,0 +1,29 @@
+{
+  "name": "tg_bot_birthdays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OleksaBohdan/tg_bot_birthdays.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OleksaBohdan/tg_bot_birthdays/issues"
+  },
+  "homepage": "https://github.com/OleksaBohdan/tg_bot_birthdays#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "mongoose": "^6.4.1",
+    "nodemon": "^2.0.18",
+    "pug": "^3.0.2"
+  }
+}
