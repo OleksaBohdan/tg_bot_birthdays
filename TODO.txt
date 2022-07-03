@@ -1,9 +1,12 @@
 TOKEN: '5588046331:AAGeUZhtgZn0C-QmXrnxuMYU0mruRu_EzRI',
 DB: 'mongodb://127.0.0.1:27017/tg_bot_birthdays',
+HEROKU: https://birthday-bot-reminder.herokuapp.com/
 
 // 01:07 Pug
 // 01:43 - Логгирование 
 // 01:53 - деплой
+// 01:59 - пауза
+// 
 
 Описание задачи
 

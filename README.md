@@ -1,3 +1,1 @@
-# Telegram bot wich notify birthdays
-
-
+# birthday-bot-reminder

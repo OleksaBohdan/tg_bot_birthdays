@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const config = require('../config');
+const logger = require('../logger');
 
 const bdSchema = new mongoose.Schema({
   userID: {
@@ -21,7 +22,7 @@ const bdSchema = new mongoose.Schema({
 const BD = mongoose.model('BD', bdSchema);
 
 mongoose.connect(config.DB, () => {
-  console.log(`Connected to mongoDB ${config.DB} succesful.`);
+  logger.info(`Connected to mongoDB ${config.DB} succesful.`);
 });
 
 module.exports = BD;

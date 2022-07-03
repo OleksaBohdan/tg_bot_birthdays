@@ -8,7 +8,7 @@ const app = new Koa();
 const router = new Router();
 app.use(require('koa-bodyparser')());
 
-router.post(`/${config.TOKEN}`, async (ctx, next) => {
+router.post(config.TOKEN, async (ctx, next) => {
   const id = ctx.request.body.message.chat.id;
   const msg = ctx.request.body.message.text;
   await addBirthdayBoy(id, msg);
