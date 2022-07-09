@@ -12,8 +12,13 @@ const bdSchema = new mongoose.Schema({
     type: String,
     index: true,
     required: true,
+    unique: true,
   },
   birthdayDate: {
+    type: Date,
+    required: true,
+  },
+  createdAt: {
     type: Date,
     required: true,
   },
