@@ -6,8 +6,10 @@ module.exports = async function sendInfo(ctx, next) {
 
   const info = `
 To add new people send:
-  {MMDD} {Name}
+  {MMDD} {Name} or
   {YYYYMMDD} {Name}\n
+For Example:
+04151452 Leonardo da Vinci\n
 To watch list of people send:
   /ls\n
 To delete people:

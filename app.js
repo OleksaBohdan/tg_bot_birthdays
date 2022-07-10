@@ -10,6 +10,10 @@ const app = new Koa();
 const router = new Router();
 app.use(require('koa-bodyparser')());
 
+router.get('/', async (ctx, next) => {
+  ctx.body = 'ok';
+});
+
 router.post(`/${config.TOKEN}`, sendBirthdayList, deleteBirthdayBoy, sendInfo, async (ctx, next) => {
   const id = ctx.request.body.message.chat.id;
   const msg = ctx.request.body.message.text;

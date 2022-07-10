@@ -1,7 +1,6 @@
 testBOTtoken:  test_BD_REMINDER_bot
 5467415983:AAFY_zeP9xpyJ8r22XnWCbmoacw1riY4WUY
 
-TOKEN: '5588046331:AAGeUZhtgZn0C-QmXrnxuMYU0mruRu_EzRI',
 DB: 'mongodb://127.0.0.1:27017/tg_bot_birthdays',
 HEROKU: https://birthday-bot-reminder.herokuapp.com/
 
@@ -18,6 +17,7 @@ birthday-bot-reminder
 ZFhuvS4lujcpr4dB
 
 mongodb+srv://birthday-bot-reminder:<password>@cluster0.k4tkhbl.mongodb.net/?retryWrites=true&w=majority
+mongodb+srv://birthday-bot-reminder:ZFhuvS4lujcpr4dB@cluster0.k4tkhbl.mongodb.net/bd-reminder
 
 
 ./ngrok http 3000 
