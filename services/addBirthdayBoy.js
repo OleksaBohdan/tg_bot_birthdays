@@ -39,7 +39,7 @@ module.exports = async function addBirthdayBoy(clientId, message) {
       if (e.message.includes('E11000')) {
         sendMessage(clientId, `${name} saving failed: name already exist`);
       } else {
-        sendMessage(clientId, `${name} saving failed ${e.message}`);
+        sendMessage(clientId, `${name} saving failed: Input Error`);
       }
       logger.error(e);
     }
