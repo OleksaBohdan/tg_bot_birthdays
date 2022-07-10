@@ -21,7 +21,7 @@ async function notifyService() {
   }
 }
 
-notifyService();
+// notifyService();
 
 // https://www.freecodecamp.org/news/schedule-a-job-in-node-with-nodecron/
 const reminder8am = new CronJob('* * 08 * * *', function () {
