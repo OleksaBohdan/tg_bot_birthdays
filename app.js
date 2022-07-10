@@ -5,6 +5,7 @@ const addBirthdayBoy = require('./services/addBirthdayBoy');
 const sendBirthdayList = require('./services/sendBirthdayList');
 const deleteBirthdayBoy = require('./services/deleteBirthdayBoy');
 const sendInfo = require('./services/sendInfo');
+const sendOk = require('./services/sendOk');
 
 const app = new Koa();
 const router = new Router();
@@ -14,7 +15,7 @@ router.get('/', async (ctx, next) => {
   ctx.body = 'ok';
 });
 
-router.post(`/${config.TOKEN}`, sendBirthdayList, deleteBirthdayBoy, sendInfo, async (ctx, next) => {
+router.post(`/${config.TOKEN}`, sendOk, sendBirthdayList, deleteBirthdayBoy, sendInfo, async (ctx, next) => {
   const id = ctx.request.body.message.chat.id;
   const msg = ctx.request.body.message.text;
   addBirthdayBoy(id, msg);
