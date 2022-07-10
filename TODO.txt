@@ -1,3 +1,6 @@
+testBOTtoken:  test_BD_REMINDER_bot
+5467415983:AAFY_zeP9xpyJ8r22XnWCbmoacw1riY4WUY
+
 TOKEN: '5588046331:AAGeUZhtgZn0C-QmXrnxuMYU0mruRu_EzRI',
 DB: 'mongodb://127.0.0.1:27017/tg_bot_birthdays',
 HEROKU: https://birthday-bot-reminder.herokuapp.com/
@@ -57,7 +60,7 @@ TODO 02.07
 4. Обдумать как связывать пользователя и дни рождения 
 - сделать выдачу всео списка людей +
 - реализовать возможность удаления +
-6. Написать Функционал уведомлений 
+6. Написать Функционал уведомлений +
 7. Добавить шифрование данных в БД дни рождения 
 8. Сделать красивые уведомления 
 9. Отработать ошибки

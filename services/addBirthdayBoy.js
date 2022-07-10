@@ -24,10 +24,12 @@ module.exports = async function addBirthdayBoy(clientId, message) {
   console.log(date, name);
 
   if (date != undefined && name != ' ') {
+    const shortDate = date.replace(date.substring(0, 4), '1904');
     const birthdayBoy = new BD({
       userID: clientId,
       birthdayBoy: name,
       birthdayDate: date,
+      birthdayShortDate: shortDate,
       createdAt: Date.now(),
     });
     try {

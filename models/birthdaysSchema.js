@@ -18,6 +18,10 @@ const bdSchema = new mongoose.Schema({
     type: Date,
     required: true,
   },
+  birthdayShortDate: {
+    type: Date,
+    required: true,
+  },
   createdAt: {
     type: Date,
     required: true,

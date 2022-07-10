@@ -20,6 +20,7 @@
   "homepage": "https://github.com/OleksaBohdan/tg_bot_birthdays#readme",
   "dependencies": {
     "axios": "^0.27.2",
+    "cron": "^2.0.0",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.1.1",

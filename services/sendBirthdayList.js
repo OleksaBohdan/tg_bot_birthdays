@@ -1,7 +1,6 @@
 const BD = require('../models/birthdaysSchema');
 const sendMessage = require('./sendMessage');
 const mapBdList = require('../mappers/mapBdList');
-const logger = require('../logger');
 
 module.exports = async function sendBirthdayList(ctx, next) {
   const id = ctx.request.body.message.chat.id;
@@ -9,13 +8,14 @@ module.exports = async function sendBirthdayList(ctx, next) {
 
   if (msg === '/ls') {
     const bdList = await BD.find({ userID: id });
-    const formattedbdList = bdList.map(mapBdList);
-
-    try {
-    } catch (e) {}
-
-    sendMessage(id, formattedbdList.join('\n'));
-    ctx.body = 'ok';
+    if (bdList === null) {
+      ctx.body = 'ok';
+      sendMessage(id, 'List of people is empty :(');
+    } else {
+      ctx.body = 'ok';
+      const formattedbdList = bdList.map(mapBdList);
+      sendMessage(id, formattedbdList.join('\n'));
+    }
   } else {
     next();
   }
