@@ -27,6 +27,10 @@ module.exports = async function deleteBirthdayBoy(ctx, next) {
       sendMessage(id, `Something went wrong, try again\n${e.message}`);
       logger.error(e);
     }
+  } else if (msg.includes('/rm all')) {
+    ctx.body = 'ok';
+    await BD.deleteMany({ id });
+    sendMessage(id, 'All peoples were deleted');
   } else {
     ctx.body = 'ok';
     next();

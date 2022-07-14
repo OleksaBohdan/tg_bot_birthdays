@@ -8,7 +8,7 @@ module.exports = async function sendBirthdayList(ctx, next) {
 
   if (msg === '/ls') {
     const bdList = await BD.find({ userID: id });
-    if (bdList === null) {
+    if (bdList.length == 0) {
       ctx.body = 'ok';
       sendMessage(id, 'List of people is empty :(');
     } else {
