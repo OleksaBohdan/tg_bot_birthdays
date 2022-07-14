@@ -12,7 +12,7 @@ const router = new Router();
 app.use(require('koa-bodyparser')());
 
 router.get('/', async (ctx, next) => {
-  ctx.body = 'ok';
+  ctx.body = `ok: ${config.TOKEN}`;
 });
 
 router.post(`/${config.TOKEN}`, sendOk, sendBirthdayList, deleteBirthdayBoy, sendInfo, async (ctx, next) => {
