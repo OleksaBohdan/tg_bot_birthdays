@@ -21,8 +21,6 @@ module.exports = async function addBirthdayBoy(clientId, message) {
     logger.error(e);
   }
 
-  console.log(date, name);
-
   if (date != undefined && name != ' ') {
     const shortDate = date.replace(date.substring(0, 4), '1904');
     const birthdayBoy = new BD({

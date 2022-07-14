@@ -13,7 +13,7 @@ For Example:
 To watch list of people send:
   /ls\n
 To delete people:
-  /d {Name}\n
+  /d {Name}\n 
 Bot will remind you:
 every 8am and 12pm  
   `;

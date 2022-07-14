@@ -12,6 +12,7 @@ const router = new Router();
 app.use(require('koa-bodyparser')());
 
 router.get('/', async (ctx, next) => {
+  ctx.status = 200;
   ctx.body = `ok: ${config.TOKEN}`;
 });
 
