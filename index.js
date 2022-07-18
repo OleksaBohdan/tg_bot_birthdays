@@ -18,3 +18,7 @@ try {
 } catch (e) {
   logger.error(e);
 }
+
+setInterval(() => {
+  console.log(0);
+}, 5000);
